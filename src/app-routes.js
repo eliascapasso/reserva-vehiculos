@@ -1,5 +1,6 @@
 import { withNavigationWatcher } from './contexts/navigation';
-import { HomePage, TasksPage, ProfilePage } from './pages';
+import { TasksPage, ProfilePage } from './pages';
+import { HomePage } from './pages/home/home';
 
 const routes = [
   {
