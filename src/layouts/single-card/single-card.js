@@ -8,6 +8,7 @@ export default ({ title, description, children }) => (
       <div className={'header'}>
         <div className={'title'}>{title}</div>
         <div className={'description'}>{description}</div>
+        <div className='logo'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Musimundo_isologo_apaisado.svg/2560px-Musimundo_isologo_apaisado.svg.png' /></div>
       </div>
       {children}
     </div>

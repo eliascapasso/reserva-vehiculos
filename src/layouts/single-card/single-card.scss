@@ -1,12 +1,12 @@
 @import "../../themes/generated/variables.base.scss";
 
 .single-card {
-
   .dx-card {
     width: 330px;
     margin: auto auto;
     padding: 40px;
     flex-grow: 0;
+    padding-top: 30%;
 
     .screen-x-small & {
       width: 100%;
@@ -19,18 +19,28 @@
     }
 
     .header {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
 
       .title {
         color: $base-text-color;
         line-height: 28px;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 30px;
+        text-align: center;
       }
 
       .description {
         color: rgba($base-text-color, alpha($base-text-color) * 0.7);
         line-height: 18px;
+      }
+
+      .logo {
+        text-align: center;
+        padding-top: 25px;
+      }
+
+      .logo > img {
+        width: 300px;
       }
     }
   }

@@ -44,8 +44,8 @@ export default function (props) {
           editorType={'dxTextBox'}
           editorOptions={emailEditorOptions}
         >
-          <RequiredRule message="Email is required" />
-          <EmailRule message="Email is invalid" />
+          <RequiredRule message="El Email es requerido" />
+          <EmailRule message="Email inválido" />
           <Label visible={false} />
         </Item>
         <ButtonItem>
@@ -59,14 +59,14 @@ export default function (props) {
               {
                 loading
                   ? <LoadIndicator width={'24px'} height={'24px'} visible={true} />
-                  : 'Reset my password'
+                  : 'Resetear mi contraseña'
               }
             </span>
           </ButtonOptions>
         </ButtonItem>
         <Item>
           <div className={'login-link'}>
-            Return to <Link to={'/login'}>Sign In</Link>
+            Regresar al <Link to={'/login'}>Inicio de Sesión</Link>
           </div>
         </Item>
       </Form>

@@ -10,8 +10,8 @@ import { vehicles } from './data.js';
 
 const searchModeItems = ['Destino1', 'Destino2'];
 
-function WarningBanner(props) {
-  if (!props.warn) {
+function SerachResult(props) {
+  if (!props.result) {
     notify("3 vehiculos encontrados");
     return (
       <div className="option">
@@ -34,13 +34,13 @@ function WarningBanner(props) {
 export class HomePage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { showWarning: true }
+    this.state = { showSearchResult: true }
     this.handleToggleClick = this.handleToggleClick.bind(this);
   }
 
   handleToggleClick() {
     this.setState(prevState => ({
-      showWarning: !prevState.showWarning
+      showSearchResult: !prevState.showSearchResult
     }));
   }
 
@@ -88,7 +88,7 @@ export class HomePage extends React.Component {
 
                 <br />
 
-                <WarningBanner warn={this.state.showWarning} />
+                <SerachResult result={this.state.showSearchResult} />
               </div>
             </div>
           </div>

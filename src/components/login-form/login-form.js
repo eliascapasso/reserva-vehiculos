@@ -44,8 +44,8 @@ export default function () {
           editorType={'dxTextBox'}
           editorOptions={emailEditorOptions}
         >
-          <RequiredRule message="Email is required" />
-          <EmailRule message="Email is invalid" />
+          <RequiredRule message="El Email es requerido" />
+          <EmailRule message="Email inválido" />
           <Label visible={false} />
         </Item>
         <Item
@@ -53,7 +53,7 @@ export default function () {
           editorType={'dxTextBox'}
           editorOptions={passwordEditorOptions}
         >
-          <RequiredRule message="Password is required" />
+          <RequiredRule message="La contraseña es requerida" />
           <Label visible={false} />
         </Item>
         <Item
@@ -73,19 +73,19 @@ export default function () {
               {
                 loading
                   ? <LoadIndicator width={'24px'} height={'24px'} visible={true} />
-                  : 'Sign In'
+                  : 'Iniciar Sesión'
               }
             </span>
           </ButtonOptions>
         </ButtonItem>
         <Item>
           <div className={'link'}>
-            <Link to={'/reset-password'}>Forgot password?</Link>
+            <Link to={'/reset-password'}>Contraseña Olvidada</Link>
           </div>
         </Item>
         <ButtonItem>
           <ButtonOptions
-            text={'Create an account'}
+            text={'Crear una cuenta'}
             width={'100%'}
             onClick={onCreateAccountClick}
           />
@@ -96,5 +96,5 @@ export default function () {
 }
 
 const emailEditorOptions = { stylingMode: 'filled', placeholder: 'Email', mode: 'email' };
-const passwordEditorOptions = { stylingMode: 'filled', placeholder: 'Password', mode: 'password' };
-const rememberMeEditorOptions = { text: 'Remember me', elementAttr: { class: 'form-text' } };
+const passwordEditorOptions = { stylingMode: 'filled', placeholder: 'Contraseña', mode: 'password' };
+const rememberMeEditorOptions = { text: 'Recordar', elementAttr: { class: 'form-text' } };
