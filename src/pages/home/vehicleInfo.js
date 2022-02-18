@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'devextreme-react/button';
 import { Link } from 'react-router-dom';
 
 export default function vehicleInfo(item) {

@@ -2,13 +2,9 @@ import React from 'react';
 import './reserve.scss';
 import Button from 'devextreme-react/button';
 import DateBox from 'devextreme-react/date-box';
-import CameraApp from '../../components/camera/CameraApp';
+import { Link } from 'react-router-dom';
 
 export class ReservePage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -53,7 +49,9 @@ export class ReservePage extends React.Component {
             <br />
             <p className={'text-vehicle'}><b>Kilometraje:</b> 108.000</p>
             <br />
-            <CameraApp />
+            <div className='link-foto'>
+            <Link to={`/reserve/camera`}>TOMAR FOTO</Link>
+            </div>
             <br />
             <Button
               width={'100%'}
