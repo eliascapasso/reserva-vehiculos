@@ -10,7 +10,7 @@ export class InspectionPage extends React.Component {
                 <div className={'content-block'}>
                     <div className={'dx-card responsive-paddings'}>
 
-                        <p className={'text-vehicle'}><b>Kilometraje :</b> <input type="text"></input></p>
+                        <p className={'text-vehicle'}><b>Kilometraje :</b> <input type="number"></input></p>
                         <p className={'text-vehicle'}> <input type="checkbox"></input><b>&nbsp;Cubiertas</b></p>
                         <p className={'text-vehicle'}> <input type="checkbox"></input><b>&nbsp;Luces</b></p>
                         <p className={'text-vehicle'}> <input type="checkbox"></input><b>&nbsp;Sin choque</b></p>
@@ -25,16 +25,15 @@ export class InspectionPage extends React.Component {
                         <br />
                         <div className='centrar'>
                             <Link to={`/home`}>CANCELAR</Link> &nbsp;
+                            <Link to={`/home`}>CONFIRMAR</Link> &nbsp;
                         </div>
-                        <br />
-                        
-                        <Button
+                        <br />                        
+                        {/* <Button
                             width={'100%'}
                             text="CONFIRMAR"
                             type="default"
                             stylingMode="contained"
-                        />
-
+                        /> */}
                     </div>
                 </div >
             </React.Fragment >
