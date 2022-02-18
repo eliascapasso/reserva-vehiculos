@@ -3,6 +3,8 @@ import { TasksPage, ProfilePage } from './pages';
 import { CameraPage } from './pages/camera/cameraPage';
 import { HomePage } from './pages/home/home';
 import { ReservePage } from './pages/reserve/reserve';
+import { InspectionPage } from './pages/inspection/inspection';
+import { DeliveryPage } from './pages/delivery/delivery';
 
 const routes = [
   {
@@ -16,6 +18,14 @@ const routes = [
   {
     path: '/home',
     component: HomePage
+  },
+  {
+    path: '/inspection',
+    component: InspectionPage
+  },
+  {
+    path: '/delivery',
+    component: DeliveryPage
   },
   {
     path: '/reserve',

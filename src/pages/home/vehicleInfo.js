@@ -11,6 +11,7 @@ export default function vehicleInfo(item) {
       <p>KM: {item.km}</p>
       <p>Lugar: {item.lugar}</p>
       <div className="but">
+        <Link to={`/delivery`}>ENTREGAR</Link> &nbsp;
         <Link to={`/reserve`}>RESERVAR</Link>
       </div>
       <hr />
