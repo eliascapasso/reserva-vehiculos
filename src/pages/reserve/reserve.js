@@ -33,12 +33,9 @@ export class ReservePage extends React.Component {
             <p className={'text-vehicle'}><b>Estado:</b> OK</p>
             <p className={'text-vehicle'}><b>Patente:</b> AC 123 AA</p>
             <br />
-            <Button
-              width={'100%'}
-              text="FICHA DE INSPECCION"
-              type="default"
-              stylingMode="contained"
-            />
+            <div>
+            <Link to={`/inspection`}>FICHA DE INSPECCION</Link> &nbsp;
+            </div> 
             <br /><br />
             <Button
               width={'100%'}

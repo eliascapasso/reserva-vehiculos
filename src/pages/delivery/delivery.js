@@ -2,6 +2,7 @@ import React from 'react';
 import './delivery.scss';
 import Button from 'devextreme-react/button';
 import DateBox from 'devextreme-react/date-box';
+import { Link } from 'react-router-dom';
 
 export class DeliveryPage extends React.Component {
     render() {
@@ -22,12 +23,9 @@ export class DeliveryPage extends React.Component {
               pickerType="rollers" />
             <p className={'text-vehicle'}><b>Duracion: 2 dias</b> </p>
             <br />
-            <Button
-              width={'100%'}
-              text="FICHA DE INSPECCION"
-              type="default"
-              stylingMode="contained"
-            />
+            <div>
+            <Link to={`/inspection`}>FICHA DE INSPECCION</Link> &nbsp;
+            </div>           
             <br /><br />
             <Button
               width={'100%'}
