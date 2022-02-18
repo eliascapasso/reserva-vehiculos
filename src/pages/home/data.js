@@ -16,7 +16,7 @@ export const vehicles = [{
 },
 {
     ID: 3,
-    patente: 'AC 123 AA ',
+    patente: 'AC 123 AA',
     estado: 'OK',
     km: '68.000',
     lugar: 'Predio',
