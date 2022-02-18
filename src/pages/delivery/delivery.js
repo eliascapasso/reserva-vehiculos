@@ -23,7 +23,7 @@ export class DeliveryPage extends React.Component {
               pickerType="rollers" />
             <p className={'text-vehicle'}><b>Duracion: 2 dias</b> </p>
             <br />
-            <div>
+            <div className='centrar'>
             <Link to={`/inspection`}>FICHA DE INSPECCION</Link> &nbsp;
             </div>           
             <br /><br />
@@ -39,12 +39,9 @@ export class DeliveryPage extends React.Component {
             <p className={'text-vehicle'}><b>Kilometraje Inicial:</b> 108.000</p>
             <p className={'text-vehicle'}><b>Kilometraje Entrega:</b> 120.000</p>
             <br />
-             <Button
-              width={'100%'}
-              text="CANCELAR"
-              type="default"
-              stylingMode="contained"
-            />
+            <div className='centrar'>
+            <Link to={`/home`}>CANCELAR</Link> &nbsp;
+            </div> 
              <br />
              <br />
             <Button

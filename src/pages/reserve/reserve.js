@@ -33,7 +33,7 @@ export class ReservePage extends React.Component {
             <p className={'text-vehicle'}><b>Estado:</b> OK</p>
             <p className={'text-vehicle'}><b>Patente:</b> AC 123 AA</p>
             <br />
-            <div>
+            <div className='link-foto'>
             <Link to={`/inspection`}>FICHA DE INSPECCION</Link> &nbsp;
             </div> 
             <br /><br />
@@ -49,6 +49,10 @@ export class ReservePage extends React.Component {
             <div className='link-foto'>
             <Link to={`/reserve/camera`}>TOMAR FOTO</Link>
             </div>
+            <br />
+            <div className='link-foto'>
+            <Link to={`/home`}>CANCELAR</Link> &nbsp;
+            </div> 
             <br />
             <Button
               width={'100%'}
