@@ -37,13 +37,6 @@ export class ReservePage extends React.Component {
             <Link to={`/inspection`}>FICHA DE INSPECCION</Link> &nbsp;
             </div> 
             <br /><br />
-            <Button
-              width={'100%'}
-              text="REGISTRO FOTOGRAFICO"
-              type="default"
-              stylingMode="contained"
-            />
-            <br />
             <p className={'text-vehicle'}><b>Kilometraje:</b> 108.000</p>
             <br />
             <div className='link-foto'>
